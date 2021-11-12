@@ -28,6 +28,7 @@
 		E2B6BA2F273ED76600CBFDFB /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2B6BA23273ED76500CBFDFB /* OpenSans-LightItalic.ttf */; };
 		E2B6BA30273ED76600CBFDFB /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2B6BA24273ED76500CBFDFB /* SourceSansPro-SemiBold.ttf */; };
 		E2B6BA31273ED76600CBFDFB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2B6BA25273ED76500CBFDFB /* Montserrat-Bold.ttf */; };
+		E2B6BA33273EF60000CBFDFB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA32273EF60000CBFDFB /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		E2B6BA23273ED76500CBFDFB /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		E2B6BA24273ED76500CBFDFB /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		E2B6BA25273ED76500CBFDFB /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		E2B6BA32273EF60000CBFDFB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				E2B6B9E6273ED6B600CBFDFB /* LauncherViewController.swift */,
+				E2B6BA32273EF60000CBFDFB /* HomeViewController.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				E2B6B9E7273ED6B600CBFDFB /* LauncherViewController.swift in Sources */,
 				E2B6B9E3273ED6B600CBFDFB /* AppDelegate.swift in Sources */,
 				E2B6B9E5273ED6B600CBFDFB /* SceneDelegate.swift in Sources */,
+				E2B6BA33273EF60000CBFDFB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +549,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "NIBM Parking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -572,6 +577,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "NIBM Parking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

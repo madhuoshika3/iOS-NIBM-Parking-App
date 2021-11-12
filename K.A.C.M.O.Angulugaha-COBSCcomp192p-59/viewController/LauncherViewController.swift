@@ -13,7 +13,11 @@ class LauncherViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    // Change status bar text color
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }
 
