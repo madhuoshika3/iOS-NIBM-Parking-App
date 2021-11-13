@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B8BDD2B88EC97C6E9D6EAD2 /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59_K_A_C_M_O_Angulugaha_COBSCcomp192p_59UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DECDD62998E135B65F8C0 /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59_K_A_C_M_O_Angulugaha_COBSCcomp192p_59UITests.framework */; };
+		8F4B9913946477D4EAFC03B5 /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38DA71357202400B33BA98A /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59Tests.framework */; };
 		E2B6B9E3273ED6B600CBFDFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6B9E2273ED6B600CBFDFB /* AppDelegate.swift */; };
-		E2B6B9E5273ED6B600CBFDFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6B9E4273ED6B600CBFDFB /* SceneDelegate.swift */; };
 		E2B6B9E7273ED6B600CBFDFB /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6B9E6273ED6B600CBFDFB /* LauncherViewController.swift */; };
 		E2B6B9EA273ED6B600CBFDFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B6B9E8273ED6B600CBFDFB /* Main.storyboard */; };
 		E2B6B9EC273ED6B800CBFDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B6B9EB273ED6B800CBFDFB /* Assets.xcassets */; };
@@ -28,7 +29,24 @@
 		E2B6BA2F273ED76600CBFDFB /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2B6BA23273ED76500CBFDFB /* OpenSans-LightItalic.ttf */; };
 		E2B6BA30273ED76600CBFDFB /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2B6BA24273ED76500CBFDFB /* SourceSansPro-SemiBold.ttf */; };
 		E2B6BA31273ED76600CBFDFB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2B6BA25273ED76500CBFDFB /* Montserrat-Bold.ttf */; };
-		E2B6BA33273EF60000CBFDFB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA32273EF60000CBFDFB /* HomeViewController.swift */; };
+		E2B6BA38273F6EB000CBFDFB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA37273F6EB000CBFDFB /* Coordinator.swift */; };
+		E2B6BA3A273F6EF300CBFDFB /* LauncherCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA39273F6EF300CBFDFB /* LauncherCoordinator.swift */; };
+		E2B6BA3C273F72DC00CBFDFB /* LauncherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA3B273F72DC00CBFDFB /* LauncherViewModel.swift */; };
+		E2B6BA3E273F7BEC00CBFDFB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA3D273F7BEC00CBFDFB /* AppCoordinator.swift */; };
+		E2B6BA41273F81E300CBFDFB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA40273F81E300CBFDFB /* DashboardViewController.swift */; };
+		E2B6BA43273F820800CBFDFB /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA42273F820800CBFDFB /* DashboardViewModel.swift */; };
+		E2B6BA45273F821E00CBFDFB /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA44273F821E00CBFDFB /* DashboardCoordinator.swift */; };
+		E2B6BA47273FA2EC00CBFDFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2B6BA46273FA2EC00CBFDFB /* GoogleService-Info.plist */; };
+		E2B6BA4B273FA83E00CBFDFB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA4A273FA83E00CBFDFB /* SignInViewController.swift */; };
+		E2B6BA4D273FA8EB00CBFDFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA4C273FA8EB00CBFDFB /* User.swift */; };
+		E2B6BA4F273FAA3900CBFDFB /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA4E273FAA3900CBFDFB /* SignInViewModel.swift */; };
+		E2B6BA51273FAFDD00CBFDFB /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA50273FAFDD00CBFDFB /* Alert.swift */; };
+		E2B6BA53273FB17B00CBFDFB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA52273FB17B00CBFDFB /* Utils.swift */; };
+		E2B6BA55273FB30D00CBFDFB /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA54273FB30D00CBFDFB /* SignInCoordinator.swift */; };
+		E2B6BA58273FB64100CBFDFB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA57273FB64100CBFDFB /* SignUpViewController.swift */; };
+		E2B6BA5A273FB68800CBFDFB /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA59273FB68800CBFDFB /* SignUpViewModel.swift */; };
+		E2B6BA5C273FB69900CBFDFB /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6BA5B273FB69900CBFDFB /* SignUpCoordinator.swift */; };
+		E335A4C947090FB43EB41F0A /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4CD33EC69B2A3759AA04EF /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +67,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		083E33DD88E7CC950602DC7E /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.release.xcconfig"; path = "Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.release.xcconfig"; sourceTree = "<group>"; };
+		114391519BCF902A216986DB /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.debug.xcconfig"; path = "Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.debug.xcconfig"; sourceTree = "<group>"; };
+		15C2D072EE0F1D511F4D6319 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.debug.xcconfig"; path = "Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4455CDC86F5389057FBEF44B /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.release.xcconfig"; path = "Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.release.xcconfig"; sourceTree = "<group>"; };
+		7DB96854488E49E0AE0C70F3 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.release.xcconfig"; path = "Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.release.xcconfig"; sourceTree = "<group>"; };
+		848DECDD62998E135B65F8C0 /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59_K_A_C_M_O_Angulugaha_COBSCcomp192p_59UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59_K_A_C_M_O_Angulugaha_COBSCcomp192p_59UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38DA71357202400B33BA98A /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B6B9DF273ED6B600CBFDFB /* K.A.C.M.O.Angulugaha-COBSCcomp192p-59.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K.A.C.M.O.Angulugaha-COBSCcomp192p-59.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B6B9E2273ED6B600CBFDFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2B6B9E4273ED6B600CBFDFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2B6B9E6273ED6B600CBFDFB /* LauncherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
 		E2B6B9E9273ED6B600CBFDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2B6B9EB273ED6B800CBFDFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +98,25 @@
 		E2B6BA23273ED76500CBFDFB /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		E2B6BA24273ED76500CBFDFB /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		E2B6BA25273ED76500CBFDFB /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		E2B6BA32273EF60000CBFDFB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E2B6BA37273F6EB000CBFDFB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E2B6BA39273F6EF300CBFDFB /* LauncherCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherCoordinator.swift; sourceTree = "<group>"; };
+		E2B6BA3B273F72DC00CBFDFB /* LauncherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherViewModel.swift; sourceTree = "<group>"; };
+		E2B6BA3D273F7BEC00CBFDFB /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E2B6BA40273F81E300CBFDFB /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		E2B6BA42273F820800CBFDFB /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		E2B6BA44273F821E00CBFDFB /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		E2B6BA46273FA2EC00CBFDFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2B6BA4A273FA83E00CBFDFB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E2B6BA4C273FA8EB00CBFDFB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E2B6BA4E273FAA3900CBFDFB /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		E2B6BA50273FAFDD00CBFDFB /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		E2B6BA52273FB17B00CBFDFB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E2B6BA54273FB30D00CBFDFB /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
+		E2B6BA57273FB64100CBFDFB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E2B6BA59273FB68800CBFDFB /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		E2B6BA5B273FB69900CBFDFB /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		EB8851DA27DD95647850A2E6 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.debug.xcconfig"; path = "Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC4CD33EC69B2A3759AA04EF /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E335A4C947090FB43EB41F0A /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4B9913946477D4EAFC03B5 /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +140,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8BDD2B88EC97C6E9D6EAD2 /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59_K_A_C_M_O_Angulugaha_COBSCcomp192p_59UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B70B793BD16CE54295D0302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4CD33EC69B2A3759AA04EF /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59.framework */,
+				848DECDD62998E135B65F8C0 /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59_K_A_C_M_O_Angulugaha_COBSCcomp192p_59UITests.framework */,
+				B38DA71357202400B33BA98A /* Pods_K_A_C_M_O_Angulugaha_COBSCcomp192p_59Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2B6B9D6273ED6B600CBFDFB = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +164,8 @@
 				E2B6B9F8273ED6B800CBFDFB /* K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests */,
 				E2B6BA02273ED6B800CBFDFB /* K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests */,
 				E2B6B9E0273ED6B600CBFDFB /* Products */,
+				F1F4D04AC71A0599CABBCCE6 /* Pods */,
+				3B70B793BD16CE54295D0302 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,14 +182,14 @@
 		E2B6B9E1273ED6B600CBFDFB /* K.A.C.M.O.Angulugaha-COBSCcomp192p-59 */ = {
 			isa = PBXGroup;
 			children = (
+				E2B6BA36273F6E9900CBFDFB /* helper */,
+				E2B6BA34273F6E4500CBFDFB /* module */,
 				E2B6BA12273ED6DC00CBFDFB /* model */,
-				E2B6BA13273ED6E500CBFDFB /* viewController */,
-				E2B6BA14273ED6EE00CBFDFB /* viewModel */,
 				E2B6BA15273ED6FB00CBFDFB /* network */,
 				E2B6BA16273ED70100CBFDFB /* common */,
+				E2B6BA48273FA7A100CBFDFB /* storyboard */,
 				E2B6BA17273ED70B00CBFDFB /* resources */,
-				E2B6B9E8273ED6B600CBFDFB /* Main.storyboard */,
-				E2B6B9ED273ED6B800CBFDFB /* LaunchScreen.storyboard */,
+				E2B6BA46273FA2EC00CBFDFB /* GoogleService-Info.plist */,
 				E2B6B9F0273ED6B800CBFDFB /* Info.plist */,
 			);
 			path = "K.A.C.M.O.Angulugaha-COBSCcomp192p-59";
@@ -158,24 +215,9 @@
 		E2B6BA12273ED6DC00CBFDFB /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E2B6BA4C273FA8EB00CBFDFB /* User.swift */,
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		E2B6BA13273ED6E500CBFDFB /* viewController */ = {
-			isa = PBXGroup;
-			children = (
-				E2B6B9E6273ED6B600CBFDFB /* LauncherViewController.swift */,
-				E2B6BA32273EF60000CBFDFB /* HomeViewController.swift */,
-			);
-			path = viewController;
-			sourceTree = "<group>";
-		};
-		E2B6BA14273ED6EE00CBFDFB /* viewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = viewModel;
 			sourceTree = "<group>";
 		};
 		E2B6BA15273ED6FB00CBFDFB /* network */ = {
@@ -189,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				E2B6B9E2273ED6B600CBFDFB /* AppDelegate.swift */,
-				E2B6B9E4273ED6B600CBFDFB /* SceneDelegate.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -222,6 +263,90 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		E2B6BA34273F6E4500CBFDFB /* module */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6BA35273F6E5500CBFDFB /* launcher */,
+				E2B6BA3F273F811500CBFDFB /* dashboard */,
+				E2B6BA49273FA81700CBFDFB /* signIn */,
+				E2B6BA56273FB62600CBFDFB /* signUp */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		E2B6BA35273F6E5500CBFDFB /* launcher */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6B9E6273ED6B600CBFDFB /* LauncherViewController.swift */,
+				E2B6BA3B273F72DC00CBFDFB /* LauncherViewModel.swift */,
+				E2B6BA39273F6EF300CBFDFB /* LauncherCoordinator.swift */,
+			);
+			path = launcher;
+			sourceTree = "<group>";
+		};
+		E2B6BA36273F6E9900CBFDFB /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6BA37273F6EB000CBFDFB /* Coordinator.swift */,
+				E2B6BA3D273F7BEC00CBFDFB /* AppCoordinator.swift */,
+				E2B6BA50273FAFDD00CBFDFB /* Alert.swift */,
+				E2B6BA52273FB17B00CBFDFB /* Utils.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		E2B6BA3F273F811500CBFDFB /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6BA40273F81E300CBFDFB /* DashboardViewController.swift */,
+				E2B6BA42273F820800CBFDFB /* DashboardViewModel.swift */,
+				E2B6BA44273F821E00CBFDFB /* DashboardCoordinator.swift */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		E2B6BA48273FA7A100CBFDFB /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6B9E8273ED6B600CBFDFB /* Main.storyboard */,
+				E2B6B9ED273ED6B800CBFDFB /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		E2B6BA49273FA81700CBFDFB /* signIn */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6BA4A273FA83E00CBFDFB /* SignInViewController.swift */,
+				E2B6BA4E273FAA3900CBFDFB /* SignInViewModel.swift */,
+				E2B6BA54273FB30D00CBFDFB /* SignInCoordinator.swift */,
+			);
+			path = signIn;
+			sourceTree = "<group>";
+		};
+		E2B6BA56273FB62600CBFDFB /* signUp */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6BA57273FB64100CBFDFB /* SignUpViewController.swift */,
+				E2B6BA59273FB68800CBFDFB /* SignUpViewModel.swift */,
+				E2B6BA5B273FB69900CBFDFB /* SignUpCoordinator.swift */,
+			);
+			path = signUp;
+			sourceTree = "<group>";
+		};
+		F1F4D04AC71A0599CABBCCE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				114391519BCF902A216986DB /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.debug.xcconfig */,
+				4455CDC86F5389057FBEF44B /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.release.xcconfig */,
+				EB8851DA27DD95647850A2E6 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.debug.xcconfig */,
+				083E33DD88E7CC950602DC7E /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.release.xcconfig */,
+				15C2D072EE0F1D511F4D6319 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.debug.xcconfig */,
+				7DB96854488E49E0AE0C70F3 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B6BA09273ED6B800CBFDFB /* Build configuration list for PBXNativeTarget "K.A.C.M.O.Angulugaha-COBSCcomp192p-59" */;
 			buildPhases = (
+				595BE94ADBD4FB8A6FE53795 /* [CP] Check Pods Manifest.lock */,
 				E2B6B9DB273ED6B600CBFDFB /* Sources */,
 				E2B6B9DC273ED6B600CBFDFB /* Frameworks */,
 				E2B6B9DD273ED6B600CBFDFB /* Resources */,
+				67F6E942240236340B701160 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +373,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B6BA0C273ED6B800CBFDFB /* Build configuration list for PBXNativeTarget "K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests" */;
 			buildPhases = (
+				78B69AF12B2BB7BAACFC93BE /* [CP] Check Pods Manifest.lock */,
 				E2B6B9F1273ED6B800CBFDFB /* Sources */,
 				E2B6B9F2273ED6B800CBFDFB /* Frameworks */,
 				E2B6B9F3273ED6B800CBFDFB /* Resources */,
@@ -264,9 +392,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B6BA0F273ED6B800CBFDFB /* Build configuration list for PBXNativeTarget "K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests" */;
 			buildPhases = (
+				EC1818B7CB106A19BF8741F8 /* [CP] Check Pods Manifest.lock */,
 				E2B6B9FB273ED6B800CBFDFB /* Sources */,
 				E2B6B9FC273ED6B800CBFDFB /* Frameworks */,
 				E2B6B9FD273ED6B800CBFDFB /* Resources */,
+				73971B24FC3C2913992F0431 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +465,7 @@
 				E2B6BA2C273ED76600CBFDFB /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				E2B6BA29273ED76600CBFDFB /* OpenSans-BoldItalic.ttf in Resources */,
 				E2B6BA28273ED76600CBFDFB /* OpenSans-Italic.ttf in Resources */,
+				E2B6BA47273FA2EC00CBFDFB /* GoogleService-Info.plist in Resources */,
 				E2B6B9EA273ED6B600CBFDFB /* Main.storyboard in Resources */,
 				E2B6BA27273ED76600CBFDFB /* OpenSans-ExtraBold.ttf in Resources */,
 				E2B6BA2E273ED76600CBFDFB /* OpenSans-Regular.ttf in Resources */,
@@ -360,15 +491,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		595BE94ADBD4FB8A6FE53795 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67F6E942240236340B701160 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73971B24FC3C2913992F0431 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78B69AF12B2BB7BAACFC93BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC1818B7CB106A19BF8741F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2B6B9DB273ED6B600CBFDFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B6BA45273F821E00CBFDFB /* DashboardCoordinator.swift in Sources */,
+				E2B6BA5A273FB68800CBFDFB /* SignUpViewModel.swift in Sources */,
+				E2B6BA3A273F6EF300CBFDFB /* LauncherCoordinator.swift in Sources */,
+				E2B6BA43273F820800CBFDFB /* DashboardViewModel.swift in Sources */,
+				E2B6BA53273FB17B00CBFDFB /* Utils.swift in Sources */,
+				E2B6BA55273FB30D00CBFDFB /* SignInCoordinator.swift in Sources */,
+				E2B6BA41273F81E300CBFDFB /* DashboardViewController.swift in Sources */,
 				E2B6B9E7273ED6B600CBFDFB /* LauncherViewController.swift in Sources */,
+				E2B6BA5C273FB69900CBFDFB /* SignUpCoordinator.swift in Sources */,
+				E2B6BA51273FAFDD00CBFDFB /* Alert.swift in Sources */,
 				E2B6B9E3273ED6B600CBFDFB /* AppDelegate.swift in Sources */,
-				E2B6B9E5273ED6B600CBFDFB /* SceneDelegate.swift in Sources */,
-				E2B6BA33273EF60000CBFDFB /* HomeViewController.swift in Sources */,
+				E2B6BA38273F6EB000CBFDFB /* Coordinator.swift in Sources */,
+				E2B6BA58273FB64100CBFDFB /* SignUpViewController.swift in Sources */,
+				E2B6BA3E273F7BEC00CBFDFB /* AppCoordinator.swift in Sources */,
+				E2B6BA4F273FAA3900CBFDFB /* SignInViewModel.swift in Sources */,
+				E2B6BA4B273FA83E00CBFDFB /* SignInViewController.swift in Sources */,
+				E2B6BA3C273F72DC00CBFDFB /* LauncherViewModel.swift in Sources */,
+				E2B6BA4D273FA8EB00CBFDFB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +790,7 @@
 		};
 		E2B6BA0A273ED6B800CBFDFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114391519BCF902A216986DB /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -570,6 +819,7 @@
 		};
 		E2B6BA0B273ED6B800CBFDFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4455CDC86F5389057FBEF44B /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -598,6 +848,7 @@
 		};
 		E2B6BA0D273ED6B800CBFDFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15C2D072EE0F1D511F4D6319 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -622,6 +873,7 @@
 		};
 		E2B6BA0E273ED6B800CBFDFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB96854488E49E0AE0C70F3 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +898,7 @@
 		};
 		E2B6BA10273ED6B800CBFDFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8851DA27DD95647850A2E6 /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -668,6 +921,7 @@
 		};
 		E2B6BA11273ED6B800CBFDFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083E33DD88E7CC950602DC7E /* Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
