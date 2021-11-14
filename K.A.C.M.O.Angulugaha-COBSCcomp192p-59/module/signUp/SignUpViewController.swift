@@ -11,6 +11,11 @@ class SignUpViewController: UIViewController, Coordinated {
     
     var viewModel               : SignUpViewModel?
     var coordinationDelegate    : CoordinationDelegate?
+    
+    @IBOutlet weak var usernameTF       : UITextField!
+    @IBOutlet weak var passwordTF       : UITextField!
+    @IBOutlet weak var confirmPasswordTF: UITextField!
+    @IBOutlet weak var signInContainer  : UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,4 +23,11 @@ class SignUpViewController: UIViewController, Coordinated {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backClicked(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func signUpClicked(_ sender: UIButton) {
+       
+    }
 }

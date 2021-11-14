@@ -12,12 +12,22 @@ class SignInViewController: UIViewController, Coordinated {
     var viewModel               : SignInViewModel?
     var coordinationDelegate    : CoordinationDelegate?
 
+    @IBOutlet weak var signUpContainer: UIView!
     @IBOutlet weak var usernameTF   : UITextField!
     @IBOutlet weak var passwordTF   : UITextField!
+    
+    var selectedIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.signUpAction))
+        self.signUpContainer.addGestureRecognizer(gesture)
+    }
+    
+    @objc func signUpAction(sender : UITapGestureRecognizer) {
+        let appCoordinator = AppCoordinator(window: UIApplication.shared.keyWindow!)
+        appCoordinator.goToSignUp()
     }
 }
 
@@ -44,8 +54,7 @@ extension SignInViewController {
     }
     
     @IBAction func signUpClicked(_ sender: UIButton) {
-        let appCoordinator = AppCoordinator(window: UIApplication.shared.keyWindow!)
-        appCoordinator.goToSignUp()
+        
     }
     
 }
