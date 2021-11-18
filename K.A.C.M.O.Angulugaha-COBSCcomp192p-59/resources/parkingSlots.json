@@ -1,0 +1,108 @@
+{
+  "parkingSlots" : [{
+   	"slotId": 1,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+       	"bookedTime": ""
+    },
+    {
+        "slotId": 2,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 3,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 4,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 5,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 6,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 7,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 8,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 9,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 10,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 11,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 12,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 13,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 14,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    },
+    {
+       	"slotId": 15,
+       	"slotType": "NormalSlot",
+       	"availabilityStatus": "Available",
+       	"vehicleNo": "",
+      	"bookedTime": ""
+    }
+  ]
+}

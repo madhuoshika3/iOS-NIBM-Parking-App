@@ -6,8 +6,25 @@
 //
 
 import Foundation
+import UIKit
 
 class Utils {
+    
+    static var isAuthenticatedUser = true
+    
+    static func getStatusColor(availabilityStatus: String) -> UIColor {
+        
+        let availabilityStatus = availabilityStatus.lowercased()
+        
+        if (availabilityStatus.elementsEqual(AvailabilityStatus.Available.rawValue.lowercased())) {
+            return UIColor(named: "light_green") ?? UIColor.lightGray
+        } else if (availabilityStatus.elementsEqual(AvailabilityStatus.Booked.rawValue.lowercased())) {
+            return UIColor(named: "light_yellow") ?? UIColor.lightGray
+        } else {
+            return UIColor(named: "light_red") ?? UIColor.lightGray
+        }
+    }
+    
     static func isValidEmailAddress(emailAddressString: String) -> Bool {
         
         var returnValue = true

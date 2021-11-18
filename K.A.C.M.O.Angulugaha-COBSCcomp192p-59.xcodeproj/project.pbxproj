@@ -14,6 +14,10 @@
 		E258F3CA2741986D006DA0CE /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258F3C92741986D006DA0CE /* HomeCoordinator.swift */; };
 		E258F3CC274198C5006DA0CE /* ParkingSlotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258F3CB274198C5006DA0CE /* ParkingSlotCell.swift */; };
 		E258F3CF27419D00006DA0CE /* ParkingSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258F3CE27419D00006DA0CE /* ParkingSlot.swift */; };
+		E258F3D12745F8BB006DA0CE /* parkingSlots.json in Resources */ = {isa = PBXBuildFile; fileRef = E258F3D02745F8BB006DA0CE /* parkingSlots.json */; };
+		E258F3D427461E4F006DA0CE /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258F3D327461E4F006DA0CE /* BookingViewController.swift */; };
+		E258F3D627461E9E006DA0CE /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258F3D527461E9E006DA0CE /* BookingViewModel.swift */; };
+		E258F3D827461EBD006DA0CE /* BookingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258F3D727461EBD006DA0CE /* BookingCoordinator.swift */; };
 		E2B6B9E3273ED6B600CBFDFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6B9E2273ED6B600CBFDFB /* AppDelegate.swift */; };
 		E2B6B9E7273ED6B600CBFDFB /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6B9E6273ED6B600CBFDFB /* LauncherViewController.swift */; };
 		E2B6B9EA273ED6B600CBFDFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B6B9E8273ED6B600CBFDFB /* Main.storyboard */; };
@@ -84,6 +88,10 @@
 		E258F3C92741986D006DA0CE /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E258F3CB274198C5006DA0CE /* ParkingSlotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlotCell.swift; sourceTree = "<group>"; };
 		E258F3CE27419D00006DA0CE /* ParkingSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlot.swift; sourceTree = "<group>"; };
+		E258F3D02745F8BB006DA0CE /* parkingSlots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parkingSlots.json; sourceTree = "<group>"; };
+		E258F3D327461E4F006DA0CE /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		E258F3D527461E9E006DA0CE /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
+		E258F3D727461EBD006DA0CE /* BookingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCoordinator.swift; sourceTree = "<group>"; };
 		E2B6B9DF273ED6B600CBFDFB /* K.A.C.M.O.Angulugaha-COBSCcomp192p-59.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K.A.C.M.O.Angulugaha-COBSCcomp192p-59.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B6B9E2273ED6B600CBFDFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B6B9E6273ED6B600CBFDFB /* LauncherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +194,16 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		E258F3D227461E34006DA0CE /* booking */ = {
+			isa = PBXGroup;
+			children = (
+				E258F3D327461E4F006DA0CE /* BookingViewController.swift */,
+				E258F3D527461E9E006DA0CE /* BookingViewModel.swift */,
+				E258F3D727461EBD006DA0CE /* BookingCoordinator.swift */,
+			);
+			path = booking;
+			sourceTree = "<group>";
+		};
 		E2B6B9D6273ED6B600CBFDFB = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +286,7 @@
 		E2B6BA17273ED70B00CBFDFB /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				E258F3D02745F8BB006DA0CE /* parkingSlots.json */,
 				E2B6BA19273ED74400CBFDFB /* fonts */,
 				E2B6B9EB273ED6B800CBFDFB /* Assets.xcassets */,
 			);
@@ -298,9 +317,10 @@
 			children = (
 				E2B6BA35273F6E5500CBFDFB /* launcher */,
 				E2B6BA3F273F811500CBFDFB /* dashboard */,
-				E2B6BA49273FA81700CBFDFB /* signIn */,
-				E2B6BA56273FB62600CBFDFB /* signUp */,
 				E258F3C427419487006DA0CE /* home */,
+				E2B6BA49273FA81700CBFDFB /* signIn */,
+				E258F3D227461E34006DA0CE /* booking */,
+				E2B6BA56273FB62600CBFDFB /* signUp */,
 			);
 			path = module;
 			sourceTree = "<group>";
@@ -390,6 +410,7 @@
 				E2B6B9DC273ED6B600CBFDFB /* Frameworks */,
 				E2B6B9DD273ED6B600CBFDFB /* Resources */,
 				67F6E942240236340B701160 /* [CP] Embed Pods Frameworks */,
+				55517E16FA364AFD334B9020 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,6 +449,7 @@
 				E2B6B9FC273ED6B800CBFDFB /* Frameworks */,
 				E2B6B9FD273ED6B800CBFDFB /* Resources */,
 				73971B24FC3C2913992F0431 /* [CP] Embed Pods Frameworks */,
+				661A0CAD436511AFF592130E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -501,6 +523,7 @@
 				E2B6BA27273ED76600CBFDFB /* OpenSans-ExtraBold.ttf in Resources */,
 				E2B6BA2E273ED76600CBFDFB /* OpenSans-Regular.ttf in Resources */,
 				E2B6BA2F273ED76600CBFDFB /* OpenSans-LightItalic.ttf in Resources */,
+				E258F3D12745F8BB006DA0CE /* parkingSlots.json in Resources */,
 				E2B6BA2A273ED76600CBFDFB /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				E2B6BA30273ED76600CBFDFB /* SourceSansPro-SemiBold.ttf in Resources */,
 			);
@@ -523,6 +546,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		55517E16FA364AFD334B9020 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		595BE94ADBD4FB8A6FE53795 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -543,6 +583,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661A0CAD436511AFF592130E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests/Pods-K.A.C.M.O.Angulugaha-COBSCcomp192p-59-K.A.C.M.O.Angulugaha-COBSCcomp192p-59UITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		67F6E942240236340B701160 /* [CP] Embed Pods Frameworks */ = {
@@ -636,6 +693,8 @@
 				E258F3C627419497006DA0CE /* HomeViewController.swift in Sources */,
 				E258F3C827419856006DA0CE /* HomeViewModel.swift in Sources */,
 				E258F3CC274198C5006DA0CE /* ParkingSlotCell.swift in Sources */,
+				E258F3D827461EBD006DA0CE /* BookingCoordinator.swift in Sources */,
+				E258F3D627461E9E006DA0CE /* BookingViewModel.swift in Sources */,
 				E2B6BA3A273F6EF300CBFDFB /* LauncherCoordinator.swift in Sources */,
 				E258F3CA2741986D006DA0CE /* HomeCoordinator.swift in Sources */,
 				E2B6BA43273F820800CBFDFB /* DashboardViewModel.swift in Sources */,
@@ -652,6 +711,7 @@
 				E2B6BA4F273FAA3900CBFDFB /* SignInViewModel.swift in Sources */,
 				E2B6BA4B273FA83E00CBFDFB /* SignInViewController.swift in Sources */,
 				E2B6BA3C273F72DC00CBFDFB /* LauncherViewModel.swift in Sources */,
+				E258F3D427461E4F006DA0CE /* BookingViewController.swift in Sources */,
 				E2B6BA4D273FA8EB00CBFDFB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

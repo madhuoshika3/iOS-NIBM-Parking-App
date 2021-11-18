@@ -32,11 +32,26 @@ class AppCoordinator: Coordinator {
         launcherCoordinator.start()
     }
     
-    func goToSignUp() {
+    func loadSignUp() {
         let signUpCoordinator = SignUpCoordinator(window: window)
         coordinators[kSignUpCoordinator] = signUpCoordinator
         signUpCoordinator.delegate = self
         signUpCoordinator.start()
+    }
+    
+    func loadHome() -> UIViewController {
+        let homeCoordinator = HomeCoordinator(window: window)
+        return homeCoordinator.getViewController()
+    }
+    
+    func loadSignIn() -> UIViewController {
+        let signInCoordinator = SignInCoordinator(window: window)
+        return signInCoordinator.getViewController()
+    }
+    
+    func loadBooking() -> UIViewController {
+        let bookingCoordinator = BookingCoordinator(window: window)
+        return bookingCoordinator.getViewController()
     }
 }
 
@@ -57,6 +72,10 @@ extension AppCoordinator: LauncherCoordinatorDelegate {
 
 extension AppCoordinator: DashboardCoordinatorDelegate {
 
+}
+
+extension AppCoordinator: HomeCoordinatorDelegate {
+    
 }
 
 extension AppCoordinator: SignInCoordinatorDelegate {

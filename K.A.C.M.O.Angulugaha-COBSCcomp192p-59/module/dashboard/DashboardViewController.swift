@@ -15,6 +15,22 @@ class DashboardViewController: UITabBarController, UITabBarControllerDelegate, C
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        
+        let appCoordinator = AppCoordinator(window: UIApplication.shared.keyWindow!)
+        
+        let vc1 = appCoordinator.loadHome()
+        vc1.view.backgroundColor = UIColor.white
+        vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+
+        let vc2 = appCoordinator.loadSignIn()
+        vc2.view.backgroundColor = UIColor.white
+        vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
+        
+        let vc3 = appCoordinator.loadBooking()
+        vc3.view.backgroundColor = UIColor.white
+        vc3.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+
+        viewControllers = [vc1, vc2, vc3]
     }
 
     // UITabBarControllerDelegate
@@ -22,12 +38,5 @@ class DashboardViewController: UITabBarController, UITabBarControllerDelegate, C
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let tabBarIndex = tabBarController.selectedIndex
         
-        if tabBarIndex == 0 {
-            
-        } else if tabBarIndex == 1 {
-            if let signInViewController = storyboard.instantiateViewController(withIdentifier: "signInVC") as? SignInViewController {
-//                signInViewController.setupDelegates()
-            }
-        }
     }
 }

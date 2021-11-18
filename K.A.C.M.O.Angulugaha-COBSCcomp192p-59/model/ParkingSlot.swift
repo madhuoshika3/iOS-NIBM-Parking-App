@@ -7,26 +7,31 @@
 
 import Foundation
 
+struct ResponseParkingSlotData: Decodable {
+    var parkingSlots: [ParkingSlot]
+}
+
 struct ParkingSlot: Decodable {
     
-    var slotType            : SlotType
-    var availabilityStatus  : AvailabilityStatus
+    var slotId              : Int                   = 0
+    var slotType            : String
+    var availabilityStatus  : String
     var vehicleNo           : String                = ""
     var bookedTime          : String                = ""
     
-    init(slotType: SlotType, availabilityStatus: AvailabilityStatus, vehicleNo: String, bookedTime: String) {
+    init(slotId: Int, slotType: String, availabilityStatus: String, vehicleNo: String, bookedTime: String) {
+        self.slotId = slotId
         self.slotType = slotType
         self.availabilityStatus = availabilityStatus
         self.vehicleNo = vehicleNo
         self.bookedTime = bookedTime
     }
-    
+}
+
+enum SlotType: String, Codable {
+    case NormalSlot, VIPSlot
 }
 
 enum AvailabilityStatus: String, Codable {
     case Available, Occupied, Booked
-}
-
-enum SlotType: String, Codable {
-    case VIPSlot, NormalSlot
 }

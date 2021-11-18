@@ -1,20 +1,20 @@
 //
-//  SignInCoordinator.swift
+//  BookingCoordinator.swift
 //  K.A.C.M.O.Angulugaha-COBSCcomp192p-59
 //
-//  Created by Madhu Oshika Angulugaha on 2021-11-13.
+//  Created by Madhu Oshika Angulugaha on 2021-11-18.
 //
 
 import UIKit
 
-protocol SignInCoordinatorDelegate: HandleSegueDelegate {
+protocol BookingCoordinatorDelegate: HandleSegueDelegate {
     
 }
 
-class SignInCoordinator: Coordinator {
+class BookingCoordinator: Coordinator {
     
     var window          : UIWindow
-    weak var delegate   : SignInCoordinatorDelegate?
+    weak var delegate   :BookingCoordinatorDelegate?
     
     init(window: UIWindow) {
         self.window = window
@@ -22,8 +22,8 @@ class SignInCoordinator: Coordinator {
     
     func start() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "signInVC") as? SignInViewController {
-            var viewModel =  SignInViewModel()
+        if let vc = storyboard.instantiateViewController(withIdentifier: "signInVC") as? BookingViewController {
+            var viewModel =  BookingViewModel()
             viewModel.delegate = self
             viewModel.viewController = vc
             vc.viewModel = viewModel
@@ -35,8 +35,8 @@ class SignInCoordinator: Coordinator {
     
     func getViewController() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "signInVC") as? SignInViewController {
-            var viewModel =  SignInViewModel()
+        if let vc = storyboard.instantiateViewController(withIdentifier: "signInVC") as? BookingViewController {
+            var viewModel =  BookingViewModel()
             viewModel.delegate = self
             viewModel.viewController = vc
             vc.viewModel = viewModel
@@ -44,18 +44,16 @@ class SignInCoordinator: Coordinator {
             
             return vc
         }
-        return SignInViewController()
+        return BookingViewController()
     }
 }
 
-extension SignInCoordinator: CoordinationDelegate {
+extension BookingCoordinator: CoordinationDelegate {
     func prepareForSegue(segue: UIStoryboardSegue) {
-        if segue.identifier == "showSignUp" {
-            delegate?.handleSegue(segue: segue)
-        }
+        
     }
 }
 
-extension SignInCoordinator: SignInViewModelDelegate {
+extension BookingCoordinator: BookingViewModelDelegate {
     
 }

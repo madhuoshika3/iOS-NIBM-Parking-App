@@ -12,22 +12,22 @@ class SignInViewController: UIViewController, Coordinated {
     var viewModel               : SignInViewModel?
     var coordinationDelegate    : CoordinationDelegate?
 
-    @IBOutlet weak var signUpContainer: UIView!
-    @IBOutlet weak var usernameTF   : UITextField!
-    @IBOutlet weak var passwordTF   : UITextField!
+    @IBOutlet weak var signUpContainer  : UIView!
+    @IBOutlet weak var usernameTF       : UITextField!
+    @IBOutlet weak var passwordTF       : UITextField!
     
-    var selectedIndex = 0
+//    var selectedIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.signUpAction))
-        self.signUpContainer.addGestureRecognizer(gesture)
+//        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.signUpAction))
+//        self.signUpContainer.addGestureRecognizer(gesture)
     }
     
     @objc func signUpAction(sender : UITapGestureRecognizer) {
         let appCoordinator = AppCoordinator(window: UIApplication.shared.keyWindow!)
-        appCoordinator.goToSignUp()
+        appCoordinator.loadSignUp()
     }
 }
 
@@ -38,19 +38,19 @@ extension SignInViewController {
     }
     
     @IBAction func signInClicked(_ sender: UIButton) {
-        if (usernameTF.text?.isEmpty ?? true || passwordTF.text?.isEmpty ?? true) {
-            Alert.init(title: "Error", msg: "Please fill all the required fields.", vc: self).show(completion: {_ in })
-        } else {
-            // Email validation
-            if !Utils.isValidEmailAddress(emailAddressString: usernameTF.text ?? "") {
-                Alert.init(title: "Error", msg: "Please enter a valid e-mail address.", vc: self).show(completion: {_ in
-
-                })
-            } else {
-                let user = User.init(username: usernameTF.text ?? "", password: passwordTF.text ?? "")
-                self.viewModel?.didSelectSignIn(user: user)
-            }
-        }
+//        if (usernameTF.text?.isEmpty ?? true || passwordTF.text?.isEmpty ?? true) {
+//            Alert.init(title: "Error", msg: "Please fill all the required fields.", vc: self).show(completion: {_ in })
+//        } else {
+//            // Email validation
+//            if !Utils.isValidEmailAddress(emailAddressString: usernameTF.text ?? "") {
+//                Alert.init(title: "Error", msg: "Please enter a valid e-mail address.", vc: self).show(completion: {_ in
+//
+//                })
+//            } else {
+//                let user = User.init(username: usernameTF.text ?? "", password: passwordTF.text ?? "")
+//                self.viewModel?.didSelectSignIn(user: user)
+//            }
+//        }
     }
     
     @IBAction func signUpClicked(_ sender: UIButton) {

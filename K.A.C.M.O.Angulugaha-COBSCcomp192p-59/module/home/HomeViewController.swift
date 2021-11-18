@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, Coordinated {
     
-    var coordinationDelegate: CoordinationDelegate?
+    var viewModel               : HomeViewModel?
+    var coordinationDelegate    : CoordinationDelegate?
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -23,6 +25,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, Coordina
 
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        readParkingSlots()
     }
     
     // Change the status bar text color
@@ -30,20 +34,36 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, Coordina
         return .lightContent
     }
 
+    func readParkingSlots() {
+        self.pakingSlots = viewModel?.loadParkingSlots(filename: "parkingSlots") ?? []
+        self.collectionView.reloadData()
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return pakingSlots.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "parkingSlotCell", for: indexPath) as! ParkingSlotCell
         
-        return cell
+        let parkingSlot = pakingSlots[indexPath.row]
+    
+        cell.mainView.backgroundColor = Utils.getStatusColor(availabilityStatus: parkingSlot.availabilityStatus)
+        cell.slotTypeLbl.text = parkingSlot.slotType
+        cell.availabilityLbl.text = parkingSlot.availabilityStatus
         
+        cell.detailsLbl.text = ""
+        
+        if (parkingSlot.availabilityStatus.lowercased().elementsEqual(AvailabilityStatus.Booked.rawValue.lowercased())) {
+            cell.detailsLbl.text = parkingSlot.vehicleNo
+        } else if (parkingSlot.availabilityStatus.lowercased().elementsEqual(AvailabilityStatus.Occupied.rawValue.lowercased())) {
+            cell.detailsLbl.text = parkingSlot.bookedTime
+        }
+        
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -54,6 +74,22 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         let widthPerItem = availableWidth / itemsPerRow
         
         return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let parkingSlot = pakingSlots[indexPath.row]
+        
+        if (parkingSlot.availabilityStatus.lowercased().elementsEqual(AvailabilityStatus.Available.rawValue.lowercased()))  {
+            if Utils.isAuthenticatedUser {
+                self.tabBarController?.selectedIndex = 2
+            } else {
+                self.tabBarController?.selectedIndex = 1
+            }
+            
+        } else {
+            Alert.init(title: "Sorry!", msg: "Selected Parking Slot is not avaialable at the moment.", vc: self).show(completion: {_ in
+            })
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
