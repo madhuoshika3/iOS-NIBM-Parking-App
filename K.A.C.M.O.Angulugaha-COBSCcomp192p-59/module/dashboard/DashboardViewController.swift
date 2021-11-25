@@ -20,7 +20,9 @@ class DashboardViewController: UITabBarController, UITabBarControllerDelegate, C
         
         let vc1 = appCoordinator.loadHome()
         vc1.view.backgroundColor = UIColor.white
-        vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+        let tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+//        tabBarItem.unselectedItemTintColor = .lightGray
+        vc1.tabBarItem = tabBarItem
 
         let vc2 = appCoordinator.loadSignIn()
         vc2.view.backgroundColor = UIColor.white
