@@ -19,9 +19,16 @@ struct SignInViewModel {
     weak var delegate       : SignInViewModelDelegate?
     weak var viewController : SignInViewController?
     
-    func didSelectSignIn(user: User) {
+    func didSelectSignIn(user: User) -> Bool {
+        
+        var authenticatedSuccess = false
+        
         Auth.auth().signIn(withEmail: user.username, password: user.password) { authResult, error in
-            // handle the response
+            if error == nil {
+                authenticatedSuccess = true
+            }
         }
+        
+        return authenticatedSuccess
     }
 }

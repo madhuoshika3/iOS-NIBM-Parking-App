@@ -9,7 +9,6 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
-    fileprivate let kLauncherCoordinator    : String  = "kLauncherCoordinator"
     fileprivate let kDashboardCoordinator   : String  = "kDashboardCoordinator"
     fileprivate let kSignUpCoordinator      : String  = "kSignUpCoordinator"
     
@@ -22,14 +21,14 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        goToLauncher()
+        goToDashboard()
     }
     
-    func goToLauncher() {
-        let launcherCoordinator = LauncherCoordinator(window: window)
-        coordinators[kLauncherCoordinator] = launcherCoordinator
-        launcherCoordinator.delegate = self
-        launcherCoordinator.start()
+    func goToDashboard() {
+        let dashboardCoordinator = DashboardCoordinator(window: window)
+        coordinators[kDashboardCoordinator] = dashboardCoordinator
+        dashboardCoordinator.delegate = self
+        dashboardCoordinator.start()
     }
     
     func loadSignUp() {

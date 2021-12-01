@@ -20,7 +20,12 @@ class SignUpViewController: UIViewController, Coordinated {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.signInAction))
+        self.signInContainer.addGestureRecognizer(gesture)
+    }
+    
+    @objc func signInAction(sender : UITapGestureRecognizer) {
+        
     }
     
     @IBAction func backClicked(_ sender: UIButton) {
@@ -28,6 +33,6 @@ class SignUpViewController: UIViewController, Coordinated {
     }
     
     @IBAction func signUpClicked(_ sender: UIButton) {
-       
+        navigationController?.dismiss(animated: true, completion: nil)
     }
 }
