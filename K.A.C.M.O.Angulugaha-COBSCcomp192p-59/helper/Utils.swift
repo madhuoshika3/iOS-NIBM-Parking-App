@@ -10,7 +10,9 @@ import UIKit
 
 class Utils {
     
-    static var isAuthenticatedUser = true
+    static var isAuthenticatedUser  = false
+    static var registrationNo       = "NIBM_PS_76347"
+    static var vehhicleNo           = "KB1363"
     
     static func getStatusColor(availabilityStatus: String) -> UIColor {
         

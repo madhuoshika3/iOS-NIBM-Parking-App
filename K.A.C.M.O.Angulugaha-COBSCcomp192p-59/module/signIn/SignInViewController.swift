@@ -16,8 +16,6 @@ class SignInViewController: UIViewController, Coordinated {
     @IBOutlet weak var usernameTF       : UITextField!
     @IBOutlet weak var passwordTF       : UITextField!
     
-//    var selectedIndex = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,14 +41,13 @@ extension SignInViewController {
         } else {
             // Email validation
             if !Utils.isValidEmailAddress(emailAddressString: usernameTF.text ?? "") {
-                Alert.init(title: "Error", msg: "Please enter a valid e-mail address.", vc: self).show(completion: {_ in
-
-                })
+                Alert.init(title: "Error", msg: "Please enter a valid e-mail address.", vc: self).show(completion: {_ in })
             } else {
                 let user = User.init(username: usernameTF.text ?? "", password: passwordTF.text ?? "")
-                let authenticateUser = self.viewModel?.didSelectSignIn(user: user) ?? false
+                let authenticatedSuccess = (self.viewModel?.didSelectSignIn(user: user))!
+                print(authenticatedSuccess)
                 
-                if authenticateUser {
+                if authenticatedSuccess {
                     self.tabBarController?.selectedIndex = 2
                 } else {
                     Alert.init(title: "Error!", msg: "Something went wrong.", vc: self).show(completion: {_ in

@@ -15,7 +15,7 @@
     },
     {
        	"slotId": 3,
-       	"slotType": "NormalSlot",
+       	"slotType": "VIPSlot",
        	"availabilityStatus": "Available",
        	"vehicleNo": "",
       	"bookedTime": ""
@@ -37,8 +37,8 @@
     {
        	"slotId": 6,
        	"slotType": "NormalSlot",
-       	"availabilityStatus": "Available",
-       	"vehicleNo": "",
+       	"availabilityStatus": "Occupied",
+       	"vehicleNo": "CAO1324",
       	"bookedTime": ""
     },
     {
@@ -65,15 +65,15 @@
     {
        	"slotId": 10,
        	"slotType": "NormalSlot",
-       	"availabilityStatus": "Available",
+       	"availabilityStatus": "Booked",
        	"vehicleNo": "",
-      	"bookedTime": ""
+      	"bookedTime": "08:10"
     },
     {
        	"slotId": 11,
-       	"slotType": "NormalSlot",
-       	"availabilityStatus": "Available",
-       	"vehicleNo": "",
+       	"slotType": "VIPSlot",
+       	"availabilityStatus": "Occupied",
+       	"vehicleNo": "CBH1276",
       	"bookedTime": ""
     },
     {

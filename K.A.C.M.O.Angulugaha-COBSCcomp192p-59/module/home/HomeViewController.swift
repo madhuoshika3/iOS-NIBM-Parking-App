@@ -57,10 +57,12 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         
         cell.detailsLbl.text = ""
         
-        if (parkingSlot.availabilityStatus.lowercased().elementsEqual(AvailabilityStatus.Booked.rawValue.lowercased())) {
-            cell.detailsLbl.text = parkingSlot.vehicleNo
-        } else if (parkingSlot.availabilityStatus.lowercased().elementsEqual(AvailabilityStatus.Occupied.rawValue.lowercased())) {
-            cell.detailsLbl.text = parkingSlot.bookedTime
+        if parkingSlot.vehicleNo != "" {
+            cell.detailsLbl.text = "Vehicle No: \n \(parkingSlot.vehicleNo)"
+        }
+        
+        if parkingSlot.bookedTime != "" {
+            cell.detailsLbl.text = "Remaining Time: \n \(parkingSlot.bookedTime)"
         }
         
         return cell
@@ -79,16 +81,15 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let parkingSlot = pakingSlots[indexPath.row]
         
-        if (parkingSlot.availabilityStatus.lowercased().elementsEqual(AvailabilityStatus.Available.rawValue.lowercased()))  {
+        if (parkingSlot.availabilityStatus != "Available") {
+            Alert.init(title: "Sorry!", msg: "Selected Parking Slot is not avaialable at the moment.", vc: self).show(completion: {_ in
+            })
+        } else {
             if Utils.isAuthenticatedUser {
                 self.tabBarController?.selectedIndex = 2
             } else {
                 self.tabBarController?.selectedIndex = 1
             }
-            
-        } else {
-            Alert.init(title: "Sorry!", msg: "Selected Parking Slot is not avaialable at the moment.", vc: self).show(completion: {_ in
-            })
         }
     }
     

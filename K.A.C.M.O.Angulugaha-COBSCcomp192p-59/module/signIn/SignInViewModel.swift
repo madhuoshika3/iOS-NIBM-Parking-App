@@ -24,8 +24,13 @@ struct SignInViewModel {
         var authenticatedSuccess = false
         
         Auth.auth().signIn(withEmail: user.username, password: user.password) { authResult, error in
-            if error == nil {
+            
+            if authResult != nil {
+                Utils.isAuthenticatedUser = true
                 authenticatedSuccess = true
+            } else {
+                Utils.isAuthenticatedUser = false
+                authenticatedSuccess = false
             }
         }
         

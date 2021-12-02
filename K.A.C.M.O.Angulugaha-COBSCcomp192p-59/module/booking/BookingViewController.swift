@@ -12,9 +12,16 @@ class BookingViewController: UIViewController, Coordinated {
     var viewModel               : BookingViewModel?
     var coordinationDelegate    : CoordinationDelegate?
 
+    @IBOutlet weak var registrationNoLbl    : UILabel!
+    @IBOutlet weak var vehicleNoLbl         : UILabel!
+    @IBOutlet weak var slotsOptionTF        : UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if (Utils.isAuthenticatedUser) {
+            registrationNoLbl.text = Utils.registrationNo
+            vehicleNoLbl.text = Utils.vehhicleNo
+        }
     }
 }

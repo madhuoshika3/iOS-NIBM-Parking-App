@@ -22,7 +22,7 @@ class BookingCoordinator: Coordinator {
     
     func start() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "signInVC") as? BookingViewController {
+        if let vc = storyboard.instantiateViewController(withIdentifier: "bookingVC") as? BookingViewController {
             var viewModel =  BookingViewModel()
             viewModel.delegate = self
             viewModel.viewController = vc
@@ -35,7 +35,7 @@ class BookingCoordinator: Coordinator {
     
     func getViewController() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "signInVC") as? BookingViewController {
+        if let vc = storyboard.instantiateViewController(withIdentifier: "bookingVC") as? BookingViewController {
             var viewModel =  BookingViewModel()
             viewModel.delegate = self
             viewModel.viewController = vc
