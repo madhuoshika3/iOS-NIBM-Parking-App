@@ -19,9 +19,7 @@ class BookingViewController: UIViewController, Coordinated {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if (Utils.isAuthenticatedUser) {
-            registrationNoLbl.text = Utils.registrationNo
-            vehicleNoLbl.text = Utils.vehhicleNo
-        }
+        registrationNoLbl.text = Utils.registrationNo
+        vehicleNoLbl.text = Utils.vehicleNo
     }
 }

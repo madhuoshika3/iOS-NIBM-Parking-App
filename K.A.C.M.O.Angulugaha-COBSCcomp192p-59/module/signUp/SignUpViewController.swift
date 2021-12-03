@@ -45,16 +45,11 @@ class SignUpViewController: UIViewController, Coordinated {
                 let user = User.init(username: usernameTF.text ?? "", password: passwordTF.text ?? "")
                 let addedSuccessfully = (self.viewModel?.didSelectSignUp(user: user))!
                 
-                if addedSuccessfully {
-                    
-                    Alert.init(title: "Info", msg: "User added successfully.", vc: self).show(completion: {_ in})
-                    
-                    usernameTF.text = ""
-                    passwordTF.text = ""
-                    confirmPasswordTF.text = ""
-                } else {
-                    Alert.init(title: "Error", msg: "Someting went wrong. Please try again.", vc: self).show(completion: {_ in})
-                }
+                Alert.init(title: "Info", msg: "User added successfully.", vc: self).show(completion: {_ in})
+                
+                usernameTF.text = ""
+                passwordTF.text = ""
+                confirmPasswordTF.text = ""
             }
         }
     }

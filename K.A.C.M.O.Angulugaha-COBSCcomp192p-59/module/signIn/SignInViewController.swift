@@ -47,12 +47,8 @@ extension SignInViewController {
                 let authenticatedSuccess = (self.viewModel?.didSelectSignIn(user: user))!
                 print(authenticatedSuccess)
                 
-                if authenticatedSuccess {
-                    self.tabBarController?.selectedIndex = 2
-                } else {
-                    Alert.init(title: "Error!", msg: "Something went wrong.", vc: self).show(completion: {_ in
-                    })
-                }
+                self.tabBarController?.selectedIndex = 2
+                Utils.isAuthenticatedUser = true
             }
         }
     }

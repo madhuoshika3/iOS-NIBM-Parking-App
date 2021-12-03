@@ -12,7 +12,8 @@ class Utils {
     
     static var isAuthenticatedUser  = false
     static var registrationNo       = "NIBM_PS_76347"
-    static var vehhicleNo           = "KB1363"
+    static var vehicleNo            = "KB1363"
+    static var parkingSlot : ParkingSlot?
     
     static func getStatusColor(availabilityStatus: String) -> UIColor {
         

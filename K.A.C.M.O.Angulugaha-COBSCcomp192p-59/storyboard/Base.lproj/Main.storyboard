@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ub9-c7-2Ma">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -533,7 +534,6 @@
         <!--Home-->
         <scene sceneID="pLS-v6-0hw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ilx-bf-EVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="bookingVC" id="QCV-zz-XHt" customClass="BookingViewController" customModule="K_A_C_M_O_Angulugaha_COBSCcomp192p_59" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSa-Dh-hpY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -695,6 +695,7 @@
                         <outlet property="vehicleNoLbl" destination="ajr-uN-hZV" id="DVa-Er-IAj"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilx-bf-EVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2457" y="1083"/>
         </scene>

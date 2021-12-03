@@ -80,6 +80,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let parkingSlot = pakingSlots[indexPath.row]
+        Utils.parkingSlot = parkingSlot
         
         if (parkingSlot.availabilityStatus != "Available") {
             Alert.init(title: "Sorry!", msg: "Selected Parking Slot is not avaialable at the moment.", vc: self).show(completion: {_ in
